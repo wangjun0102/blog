@@ -25,5 +25,5 @@ If any <b>question</b>, please send an <b>email</b> to me or just open an <b>iss
 
 #### Personal information
 
-Email: {{ site.email }}
+Email: {{ site.email }} <br />
 QQ:626277029
