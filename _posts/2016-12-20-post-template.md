@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Post documentation
+title: java虚拟机系列
 date:   2016-12-30
 categories: "readme"
-tags: [jekyll, material design]
-author: Lambda
-comment: false
+tags: [java, jvm]
+author: Mark
+comment: true
 ---
 
 This is a documentation of posts.
