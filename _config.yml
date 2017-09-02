@@ -9,8 +9,8 @@ googleplus_username: Mark
 head-title: Mark's blog
 title: Mark's blog
 
-baseurl: "/blog/"    # the subpath of your site, "/blog"
-url: ""
+baseurl: "/blog"    # the subpath of your site, "/blog"
+url: "/"
 
 # footer 
 description: "I know that what I'm doing looks stupid, but I'm a big boy and really want to do this."
