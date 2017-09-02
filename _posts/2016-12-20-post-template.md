@@ -1,8 +1,8 @@
 ---
 layout: post
-title: java虚拟机系列
+title: JVM-垃圾回收
 date:   2016-12-30
-categories: "readme"
+categories: " java虚拟机系列"
 tags: [java, jvm]
 author: Mark
 comment: true
