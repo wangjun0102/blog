@@ -1,8 +1,8 @@
 ---
 layout: post
-title: JVM - 多线程 - synchronized
+title: Java多线程 - synchronized
 date:   2016-5-25
-categories: "java - 多线程"
+categories: "java多线程"
 tags: [java, jvm]
 author: Mark
 comment: false
