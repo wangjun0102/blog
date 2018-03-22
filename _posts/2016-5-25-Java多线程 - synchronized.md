@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Java多线程 - synchronized
+title: Java并发 - synchronized原理及锁优化
 date:   2016-5-25
-categories: "java多线程"
+categories: "java并发"
 tags: [java, jvm]
 author: Mark
 comment: false
