@@ -22,3 +22,13 @@ happens-before原则非常重要，它是判断数据是否存在竞争、线程
  6. **线程中断规则**：对线程interrupt()方法的调用先行发生于被中断线程代码检测到中断事件的发生，可以通过interrupted()方法检测到是否有中断发生。
  7. **对象终结规则**：一个对象的初始化完成（构造函数执行结束）先行发生于它的finalize()方法的开始。
  8. **传递性**：如果操作A先行发生于操作B，操作B先行发生于操作C，则操作A先行发生于操作C。
+
+上面八条是原生Java满足Happens-before关系的规则，但是我们可以对他们进行推导出其他满足happens-before的规则：
+
+ 1. 将一个元素放入一个线程安全的队列的操作Happens-Before从队列中取出这个元素的操作。
+ 2. 将一个元素放入一个线程安全容器的操作Happens-Before从容器中取出这个元素的操作。
+ 3. 在CountDownLatch上的倒数操作Happens-Before CountDownLatch#await()操作。
+ 4. 释放Semaphore许可的操作Happens-Before获得许可操作 Future表示的任务的所有操作Happens-Before Future#get()操作。
+ 5. 向Executor提交一个Runnable或Callable的操作Happens-Before任务开始执行操作。
+
+如果两个操作不存在上述（前面8条 + 后面6条）任一一个happens-before规则，那么这两个操作就没有顺序的保障，JVM可以对这两个操作进行重排序。如果操作A happens-before操作B，那么操作A在内存上所做的操作对操作B都是可见的。
